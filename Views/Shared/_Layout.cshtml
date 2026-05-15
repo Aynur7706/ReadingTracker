@@ -11,8 +11,9 @@
                 extend: {
                     colors: {
                         ink: "#111827",
-                        paper: "#F6F8FC",
-                        accent: "#FACC15"
+                        paper: "#FBF6ED",
+                        accent: "#6F4E37",
+                        leather: "#3D2A22"
                     },
                     boxShadow: {
                         soft: "0 20px 60px rgba(15, 23, 42, 0.10)"
@@ -23,10 +24,10 @@
     </script>
 </head>
 <body class="min-h-screen bg-paper text-ink antialiased">
-    <header class="border-b border-slate-200 bg-white/90 backdrop-blur">
+    <header class="border-b border-[#e5d8c8] bg-white/85 backdrop-blur">
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-            <a class="flex items-center gap-3 font-semibold tracking-tight text-slate-950" href="/books">
-                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent text-sm font-black text-slate-950">R</span>
+            <a class="flex items-center gap-3 font-semibold tracking-tight text-[#3d2a22]" href="/books">
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent text-sm font-black text-white">R</span>
                 <span class="text-xl">Reading Tracker</span>
             </a>
 
@@ -36,14 +37,14 @@
                     <span class="hidden text-sm text-slate-500 md:inline">
                         @User.FindFirst("FullName")?.Value
                     </span>
-                    <a href="/logout" class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-950 hover:text-slate-950">
+                    <a href="/logout" class="rounded-xl border border-[#d8c9b8] px-4 py-2 text-sm font-semibold text-[#5f5144] transition hover:border-[#3d2a22] hover:text-[#3d2a22]">
                         Çıxış
                     </a>
                 }
                 else
                 {
-                    <a href="/login" class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-950 hover:text-slate-950">Login</a>
-                    <a href="/register" class="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-yellow-300">Qeydiyyat</a>
+                    <a href="/login" class="rounded-xl border border-[#d8c9b8] px-4 py-2 text-sm font-semibold text-[#5f5144] transition hover:border-[#3d2a22] hover:text-[#3d2a22]">Login</a>
+                    <a href="/register" class="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#5a4034]">Qeydiyyat</a>
                 }
             </div>
         </nav>

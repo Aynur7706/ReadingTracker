@@ -2,33 +2,33 @@
 
 <section class="mx-auto grid min-h-[680px] max-w-5xl items-center gap-10 lg:grid-cols-[1fr_420px]">
     <div class="hidden lg:block">
-        <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-amber-600">Personal library system</p>
-        <h1 class="max-w-xl text-5xl font-black leading-tight tracking-tight text-slate-950">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[#8a6a43]">Personal library system</p>
+        <h1 class="max-w-xl text-5xl font-black leading-tight tracking-tight text-[#3d2a22]">
             Oxuma vərdişlərini bir yerdə idarə et.
         </h1>
         <p class="mt-5 max-w-lg text-lg leading-8 text-slate-600">
             Kitablarını əlavə et, statuslarını izlə və oxuma prosesini sadə, fokuslu paneldə saxla.
         </p>
         <div class="mt-8 grid max-w-md grid-cols-3 gap-3">
-            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div class="rounded-2xl border border-[#e5d8c8] bg-white p-4 shadow-sm">
                 <div class="text-2xl font-black">JSON</div>
                 <div class="mt-1 text-sm text-slate-500">data storage</div>
             </div>
-            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div class="rounded-2xl border border-[#e5d8c8] bg-white p-4 shadow-sm">
                 <div class="text-2xl font-black">MVC</div>
                 <div class="mt-1 text-sm text-slate-500">architecture</div>
             </div>
-            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div class="rounded-2xl border border-[#e5d8c8] bg-white p-4 shadow-sm">
                 <div class="text-2xl font-black">Auth</div>
                 <div class="mt-1 text-sm text-slate-500">login flow</div>
             </div>
         </div>
     </div>
 
-    <div class="rounded-[28px] border border-slate-200 bg-white p-8 shadow-soft">
+    <div class="rounded-[28px] border border-[#e5d8c8] bg-white p-8 shadow-soft">
         <div class="mb-8 text-center">
-            <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-accent font-black text-slate-950">R</div>
-            <h2 class="text-3xl font-black tracking-tight text-slate-950">Daxil ol</h2>
+            <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#6f4e37] font-black text-white">R</div>
+            <h2 class="text-3xl font-black tracking-tight text-[#3d2a22]">Daxil ol</h2>
             <p class="mt-2 text-sm text-slate-500">Kitablarını izləməyə davam et</p>
         </div>
 
@@ -37,24 +37,24 @@
 
             <div>
                 <label class="mb-2 block text-sm font-bold text-slate-800">Username</label>
-                <input asp-for="Username" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-950 focus:ring-4 focus:ring-slate-200" placeholder="Məsələn: user" />
+                <input asp-for="Username" class="w-full rounded-2xl border border-[#e5d8c8] bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#6f4e37] focus:ring-4 focus:ring-[#eadfce]" placeholder="Məsələn: user" />
                 <span asp-validation-for="Username" class="mt-1 block text-sm text-red-600"></span>
             </div>
 
             <div>
                 <label class="mb-2 block text-sm font-bold text-slate-800">Şifrə</label>
-                <input asp-for="Password" type="password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-950 focus:ring-4 focus:ring-slate-200" placeholder="Məsələn: 1234" />
+                <input asp-for="Password" type="password" class="w-full rounded-2xl border border-[#e5d8c8] bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#6f4e37] focus:ring-4 focus:ring-[#eadfce]" placeholder="Məsələn: 1234" />
                 <span asp-validation-for="Password" class="mt-1 block text-sm text-red-600"></span>
             </div>
 
-            <button class="w-full rounded-2xl bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
+            <button class="w-full rounded-2xl bg-[#3d2a22] px-5 py-3 font-bold text-white transition hover:bg-[#5a4034]">
                 Daxil ol
             </button>
         </form>
 
         <p class="mt-6 text-center text-sm text-slate-600">
             Hesabın yoxdur?
-            <a href="/register" class="font-bold text-slate-950 underline decoration-amber-400 decoration-2 underline-offset-4">Qeydiyyatdan keç</a>
+            <a href="/register" class="font-bold text-[#3d2a22] underline decoration-[#8b6f47] decoration-2 underline-offset-4">Qeydiyyatdan keç</a>
         </p>
     </div>
 </section>

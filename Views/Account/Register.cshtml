@@ -1,40 +1,40 @@
 @model ReadingTracker.Models.RegisterViewModel
 
 <section class="mx-auto flex min-h-[680px] max-w-3xl items-center justify-center">
-    <div class="w-full rounded-[28px] border border-slate-200 bg-white p-8 shadow-soft">
+    <div class="w-full rounded-[28px] border border-[#e5d8c8] bg-white p-8 shadow-soft">
         <div class="mb-8 text-center">
-            <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-accent font-black text-slate-950">R</div>
-            <h2 class="text-3xl font-black tracking-tight text-slate-950">Qeydiyyat</h2>
+            <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#6f4e37] font-black text-white">R</div>
+            <h2 class="text-3xl font-black tracking-tight text-[#3d2a22]">Qeydiyyat</h2>
             <p class="mt-2 text-sm text-slate-500">Yeni hesab yaradın və kitablarınızı izləyin</p>
         </div>
 
         <form method="post" class="space-y-5">
             <div>
                 <label class="mb-2 block text-sm font-bold text-slate-800">Ad və soyad</label>
-                <input asp-for="FullName" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-950 focus:ring-4 focus:ring-slate-200" placeholder="Adınızı daxil edin" />
+                <input asp-for="FullName" class="w-full rounded-2xl border border-[#e5d8c8] bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#6f4e37] focus:ring-4 focus:ring-[#eadfce]" placeholder="Adınızı daxil edin" />
                 <span asp-validation-for="FullName" class="mt-1 block text-sm text-red-600"></span>
             </div>
 
             <div>
                 <label class="mb-2 block text-sm font-bold text-slate-800">Username</label>
-                <input asp-for="Username" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-950 focus:ring-4 focus:ring-slate-200" placeholder="Username seçin" />
+                <input asp-for="Username" class="w-full rounded-2xl border border-[#e5d8c8] bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#6f4e37] focus:ring-4 focus:ring-[#eadfce]" placeholder="Username seçin" />
                 <span asp-validation-for="Username" class="mt-1 block text-sm text-red-600"></span>
             </div>
 
             <div>
                 <label class="mb-2 block text-sm font-bold text-slate-800">Şifrə</label>
-                <input asp-for="Password" type="password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-950 focus:ring-4 focus:ring-slate-200" placeholder="Minimum 4 simvol" />
+                <input asp-for="Password" type="password" class="w-full rounded-2xl border border-[#e5d8c8] bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#6f4e37] focus:ring-4 focus:ring-[#eadfce]" placeholder="Minimum 4 simvol" />
                 <span asp-validation-for="Password" class="mt-1 block text-sm text-red-600"></span>
             </div>
 
-            <button class="w-full rounded-2xl bg-slate-950 px-5 py-3 font-bold text-white transition hover:bg-slate-800">
+            <button class="w-full rounded-2xl bg-[#3d2a22] px-5 py-3 font-bold text-white transition hover:bg-[#5a4034]">
                 Qeydiyyatdan keç
             </button>
         </form>
 
         <p class="mt-6 text-center text-sm text-slate-600">
             Artıq hesabın var?
-            <a href="/login" class="font-bold text-slate-950 underline decoration-amber-400 decoration-2 underline-offset-4">Daxil ol</a>
+            <a href="/login" class="font-bold text-[#3d2a22] underline decoration-[#8b6f47] decoration-2 underline-offset-4">Daxil ol</a>
         </p>
     </div>
 </section>
