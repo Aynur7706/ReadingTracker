@@ -41,6 +41,20 @@ namespace ReadingTracker.Controllers
             return View();
         }
 
+        [HttpGet("/books/{id:int}")]
+        public IActionResult Details(int id)
+        {
+            int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var book = _jsonService.GetBooks()
+                .FirstOrDefault(b => b.Id == id && b.AppUserId == userId);
+
+            if (book == null)
+                return NotFound();
+
+            return View(book);
+        }
+
         [HttpPost("/books/create")]
         public IActionResult Create(BookCreateViewModel model)
         {
@@ -79,12 +93,12 @@ namespace ReadingTracker.Controllers
                 return NotFound();
 
             if (book.Status == BookStatus.Bitirilib)
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", new { id });
 
             book.Status = BookStatus.Bitirilib;
             _jsonService.SaveBooks(books);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Details", new { id });
         }
     }
 }

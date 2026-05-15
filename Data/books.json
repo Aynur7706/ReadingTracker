@@ -8,72 +8,16 @@
   },
   {
     "Id": 2,
-    "Title": "Clean cloude",
-    "Author": "Robert ",
-    "Status": 2,
-    "AppUserId": 2
-  },
-  {
-    "Id": 3,
-    "Title": "\u201CCinay\u0259t v\u0259 C\u0259za\u201D ",
-    "Author": "Fyodor Dostoyevski",
-    "Status": 2,
-    "AppUserId": 2
-  },
-  {
-    "Id": 4,
-    "Title": "Anna Karenina",
-    "Author": "Lev Tolstoy",
-    "Status": 1,
-    "AppUserId": 2
-  },
-  {
-    "Id": 5,
-    "Title": "1984",
-    "Author": "George Orwell",
-    "Status": 1,
-    "AppUserId": 2
-  },
-  {
-    "Id": 6,
-    "Title": "Y\u00FCz ilin t\u0259nhal\u0131\u011F\u0131",
-    "Author": " Gabriel Garc\u00EDa M\u00E1rquez",
-    "Status": 1,
-    "AppUserId": 2
-  },
-  {
-    "Id": 7,
-    "Title": "Qoca v\u0259 D\u0259niz",
-    "Author": "Ernest Hemingway",
-    "Status": 1,
-    "AppUserId": 2
-  },
-  {
-    "Id": 8,
-    "Title": "\u201CCinay\u0259t v\u0259 C\u0259za\u201D",
-    "Author": "Fyodor Dostoyevski",
+    "Title": "Clean Code",
+    "Author": "Robert C. Martin",
     "Status": 1,
     "AppUserId": 1
   },
   {
-    "Id": 9,
+    "Id": 3,
     "Title": "1984",
-    "Author": "Fyodor Dostoyevski",
-    "Status": 2,
-    "AppUserId": 3
-  },
-  {
-    "Id": 10,
-    "Title": "React learing",
-    "Author": " Gabriel Garc\u00EDa M\u00E1rquez",
+    "Author": "George Orwell",
     "Status": 1,
-    "AppUserId": 3
-  },
-  {
-    "Id": 11,
-    "Title": "Ovod",
-    "Author": "Etel Lilian",
-    "Status": 2,
-    "AppUserId": 5
+    "AppUserId": 1
   }
 ]

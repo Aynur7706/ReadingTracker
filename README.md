@@ -11,9 +11,23 @@ Personal reading tracker web application built with ASP.NET Core MVC and JSON-ba
 - JSON file-based data storage
 - Responsive Bootstrap UI
 
-## Screenshot
+## Screenshots
+
+### Login
 
 ![ReadingTracker login page](docs/screenshots/reading-login.png)
+
+### Registration
+
+![ReadingTracker registration page](docs/screenshots/reading-register.png)
+
+### Dashboard after login
+
+![ReadingTracker dashboard page](docs/screenshots/reading-dashboard.png)
+
+### Book details page
+
+![ReadingTracker book details page](docs/screenshots/reading-details.png)
 
 ## Tech Stack
 

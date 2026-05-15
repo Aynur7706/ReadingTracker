@@ -80,17 +80,27 @@
 
                     @if (book.Status == BookStatus.Oxunur)
                     {
-                        <form method="post" action="/books/finish/@book.Id" class="mt-6">
-                            <button class="w-full rounded-2xl bg-emerald-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-emerald-700">
-                                Bitirilib et
-                            </button>
-                        </form>
+                        <div class="mt-6 grid grid-cols-2 gap-2">
+                            <a href="/books/@book.Id" class="rounded-2xl border border-slate-300 px-4 py-3 text-center text-sm font-bold text-slate-700 transition hover:border-slate-950 hover:text-slate-950">
+                                Details
+                            </a>
+                            <form method="post" action="/books/finish/@book.Id">
+                                <button class="w-full rounded-2xl bg-emerald-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-emerald-700">
+                                    Bitirilib et
+                                </button>
+                            </form>
+                        </div>
                     }
                     else
                     {
-                        <button class="mt-6 w-full rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700" disabled>
-                            Artıq bitirilib
-                        </button>
+                        <div class="mt-6 grid grid-cols-2 gap-2">
+                            <a href="/books/@book.Id" class="rounded-2xl border border-slate-300 px-4 py-3 text-center text-sm font-bold text-slate-700 transition hover:border-slate-950 hover:text-slate-950">
+                                Details
+                            </a>
+                            <button class="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700" disabled>
+                                Bitirilib
+                            </button>
+                        </div>
                     }
                 </article>
             }
