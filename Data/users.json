@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "FullName": "Test User",
+    "Username": "user",
+    "Password": "1234"
+  },
+  {
+    "Id": 2,
+    "FullName": "Aynur",
+    "Username": "beuaynur",
+    "Password": "2140"
+  },
+  {
+    "Id": 3,
+    "FullName": "Elsad",
+    "Username": "elsadkesen",
+    "Password": "1234"
+  },
+  {
+    "Id": 4,
+    "FullName": "aylin memmedova",
+    "Username": "aylin123",
+    "Password": "1234"
+  },
+  {
+    "Id": 5,
+    "FullName": "Aytac Mirzezade",
+    "Username": "aitacmi",
+    "Password": "mart2008A"
+  }
+]
