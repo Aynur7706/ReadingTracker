@@ -1,106 +1,56 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="az">
 <head>
     <meta charset="utf-8" />
     <title>Reading Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <style>
-            body {
-                background: #f5f7fb;
-                font-family: 'Segoe UI', sans-serif;
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: "#111827",
+                        paper: "#F6F8FC",
+                        accent: "#FACC15"
+                    },
+                    boxShadow: {
+                        soft: "0 20px 60px rgba(15, 23, 42, 0.10)"
+                    }
+                }
             }
-
-            .navbar-custom {
-                background: linear-gradient(135deg, #111827, #1f2937);
-            }
-
-            .brand-icon {
-                width: 38px;
-                height: 38px;
-                border-radius: 12px;
-                background: #facc15;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                color: #111827;
-                font-weight: 800;
-                margin-right: 10px;
-            }
-
-            .main-card {
-                border: 0;
-                border-radius: 24px;
-                box-shadow: 0 15px 40px rgba(15, 23, 42, .08);
-            }
-
-            .btn-dark {
-                background: #111827;
-                border-color: #111827;
-            }
-
-            .btn-dark:hover {
-                background: #000;
-            }
-
-            .form-control {
-                padding: 12px 14px;
-            }
-
-            .book-card {
-                transition: .25s;
-            }
-
-            .book-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 18px 40px rgba(15, 23, 42, .12);
-            }
-
-            .hero-box {
-                background: linear-gradient(135deg, #111827, #374151);
-                color: white;
-                border-radius: 30px;
-                padding: 35px;
-            }
-    </style>
+        }
+    </script>
 </head>
-
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="/books">
-                <span class="brand-icon">R</span>
-                Reading Tracker
+<body class="min-h-screen bg-paper text-ink antialiased">
+    <header class="border-b border-slate-200 bg-white/90 backdrop-blur">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+            <a class="flex items-center gap-3 font-semibold tracking-tight text-slate-950" href="/books">
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent text-sm font-black text-slate-950">R</span>
+                <span class="text-xl">Reading Tracker</span>
             </a>
 
-            <div class="ms-auto d-flex align-items-center gap-3">
+            <div class="flex items-center gap-2">
                 @if (User.Identity != null && User.Identity.IsAuthenticated)
                 {
-                    <span class="text-white-50 d-none d-md-inline">
-                        <i class="bi bi-person-circle"></i>
+                    <span class="hidden text-sm text-slate-500 md:inline">
                         @User.FindFirst("FullName")?.Value
                     </span>
-
-                    <a href="/logout" class="btn btn-outline-light rounded-3">
-                        <i class="bi bi-box-arrow-right"></i> Çıxış
+                    <a href="/logout" class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-950 hover:text-slate-950">
+                        Çıxış
                     </a>
                 }
                 else
                 {
-                    <a href="/login" class="btn btn-outline-light rounded-3">Login</a>
-                    <a href="/register" class="btn btn-warning rounded-3">Qeydiyyat</a>
+                    <a href="/login" class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-950 hover:text-slate-950">Login</a>
+                    <a href="/register" class="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-yellow-300">Qeydiyyat</a>
                 }
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main class="container py-5">
+    <main class="mx-auto max-w-6xl px-5 py-10">
         @RenderBody()
     </main>
-
 </body>
 </html>

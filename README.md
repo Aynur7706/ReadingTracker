@@ -20,7 +20,7 @@ Personal reading tracker web application built with ASP.NET Core MVC and JSON-ba
 - ASP.NET Core MVC
 - C#
 - JSON data storage
-- Bootstrap
+- Tailwind CSS
 - HTML, CSS
 
 ## Run Locally
